@@ -4,9 +4,8 @@ const loader = document.querySelector('.loader')
 
 
 window.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => {
-        loader.classList.add('close')
-    },1000)
+    loader.classList.add('close')
+    setTimeout(() => loader.style.display = "none",1000)
 })
 
 // ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰  Header  & click to scroll   ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
