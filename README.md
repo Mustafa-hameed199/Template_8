@@ -1,1 +1,6 @@
-# Template_8
+# Softy Pinko
+
+## Technologies Used 
+* HTML
+* CSS 
+* JS
