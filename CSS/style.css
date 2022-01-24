@@ -77,7 +77,7 @@ h4 { margin-bottom: 1em }
     height: 100vh;
     z-index: 1000;
     background-color: var(--main_violet_clr);
-    transition: opacity 1s ease;
+    transition: opacity .3s ease-out;
 }
 .loader.close {
     opacity: 0;

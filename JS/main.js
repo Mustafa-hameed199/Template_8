@@ -5,7 +5,10 @@ const loader = document.querySelector('.loader')
 
 window.addEventListener('DOMContentLoaded', () => {
     loader.classList.add('close')
-    setTimeout(() => loader.style.display = "none",1000)
+    setTimeout(() => {
+        loader.style.display = "none";
+        revealElements() // intersectionObserver function
+    } , 325)
 })
 
 // ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰  Header  & click to scroll   ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
