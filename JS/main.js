@@ -2,11 +2,13 @@ let log = console.log;
 // ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰  Loader   ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 const loader = document.querySelector('.loader')
 
-window.addEventListener("load" , () => loader.classList.add('close') )
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener("load" , () => {
+    loader.classList.add('close')
+    setTimeout(() => {
         loader.style.display = "none";
         revealElements() // intersectionObserver function
-})
+    } , 325)
+} )
 
 // ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰  Header  & click to scroll   ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 const navIcon = document.querySelector('.nav__icon');
