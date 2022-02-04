@@ -376,6 +376,7 @@ h4 { margin-bottom: 1em }
     flex-direction: column;
     align-items: center;
     gap: 4rem;
+    overflow: hidden;
 }
 .about__box > * { flex-basis: 100% }
 

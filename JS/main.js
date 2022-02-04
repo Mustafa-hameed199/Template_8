@@ -82,15 +82,17 @@ window.addEventListener('scroll', () => {
     }
 })
 // ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰  Content reveal   ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
-let option = {
-    threshold: '.3',
-    rootMargin: '0px'
+function revealElements() {
+    let option = {
+        threshold: '.3',
+        rootMargin: '0px'
+    }
+    
+    let obs = new IntersectionObserver(watch , option)
+    
+    function watch(entries) { entries.forEach(el => { if (el.isIntersecting) el.target.classList.add('spotted') }) }
+    document.querySelectorAll('.spot').forEach(el => obs.observe(el));
 }
-
-let obs = new IntersectionObserver(watch , option)
-
-function watch(entries) { entries.forEach(el => { if (el.isIntersecting) el.target.classList.add('spotted') }) }
-document.querySelectorAll('.spot').forEach(el => obs.observe(el));
 
 
 
